@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="./estilo1.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <form class="forulario1" onsubmit="validarFormularioDoctores(event)">
+        <p>Formulario Doctores: </p>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br>
+
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" required><br>
+
+        <label for="cedula">Número de Cédula:</label>
+        <input type="text" id="cedula" name="cedula" required><br>
+
+        <label for="especialidad">Especialidad:</label>
+        <select id="especialidad" name="especialidad" required>
+            <option value="Medicina General">Medicina General</option>
+            <option value="Cardiología">Cardiología</option>
+            <option value="Medicina interna">Medicina interna</option>
+            <option value="Dermatología">Dermatología</option>
+            <option value="Rehabilitación física">Rehabilitación física</option>
+            <option value="Psicología">Psicología</option>
+            <option value="Odontología">Odontología</option>
+            <option value="Radiología">Radiología</option>
+        <!-- Agrega más opciones de especialidades si es necesario -->
+        </select><br>
+
+        <label for="consultorio">Consultorio:</label>
+        <input type="text" id="consultorio" name="consultorio" required><br>
+
+        <label for="correo">Correo de contacto:</label>
+        <input type="email" id="correo" name="correo" required><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+<br>
+<br>
+<br>
+<br>
+    <form class="Formulario2" onsubmit="validarFormularioPersonas(event)">
+        <p>Formulario Personas: </p>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br>
+
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" required><br>
+
+        <label for="cedula">Número de Cédula:</label>
+        <input type="text" id="cedula" name="cedula" required><br>
+
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad" required><br>
+
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" required><br>
+
+        <label for="especialidad">Especialidad requerida:</label>
+        <select id="especialidad" name="especialidad" required>
+            <option value="Medicina General">Medicina General</option>
+            <option value="Cardiología">Cardiología</option>
+            <option value="Medicina interna">Medicina interna</option>
+            <option value="Dermatología">Dermatología</option>
+            <option value="Rehabilitación física">Rehabilitación física</option>
+            <option value="Psicología">Psicología</option>
+            <option value="Odontología">Odontología</option>
+            <option value="Radiología">Radiología</option>
+        <!-- Agrega más opciones de especialidades si es necesario -->
+        </select><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+
+    <script src="formularios.js"></script>
+</body>
+</html>
